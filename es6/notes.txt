@@ -1,0 +1,6 @@
+- The identifiers in JavaScript are case-sensitive
+- Strict mode => "use strict"; at the beginning of a function or a script
+- Hoisting =>to move all of the declarations at the top of the scope
+- Spread Operator
+- Rest Parameter
+- 
