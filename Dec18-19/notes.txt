@@ -1,0 +1,55 @@
+- The identifiers in JavaScript are case-sensitive
+- Strict mode => "use strict"; at the beginning of a function or a script
+- Hoisting =>to move all of the declarations at the top of the scope
+- Spread Operator
+- Rest Parameter
+- Dynamic function- Destructuring
+- ES6 Variables (var, let, const)
+- variable which is declared by using the let keyword is assigned the block scope.
+
+var x = 10;
+var x = 20;
+console.log(x) //////prints 20 as output////////
+
+*********************
+
+let x = 10;
+let x = 20;
+console.log(x) ////////gives error(Identifier 'x' has already been declared)///////////
+
+**********************
+const keyword- 
+-It cannot be reassigned a value.
+-It is block scoped.
+-A constant cannot be re-declared.
+-Constants must be initialized at the time of declaration.
+- Hoisting is the default behavior of JavaScript 
+  to move all declarations to the top of the current script, current function, or current scope.
+- JavaScript only hoists the variable declaration, not variable initialization.
+Operators- 
+- Arithmetic Operators(+,-,*,/,%,++,--)
+- Relational Operators(>,<,>=,<=,==,!=)
+- Logical Operators(&&,||,!)
+- Assignment Operators(=,+=,-=,*=,/=)
+- Bitwise Operators(&,|,^,~,<<,>>)
+- Type Operators(typeof(operand))
+- Miscellaneous Operators(+,-,?)
+Loops
+- Definite   : for, for...in, for...of
+- Indefinite : while, do...while
+Loop control statements
+-break;
+-continue;
+
+Decision making statements
+- if 
+- if...else
+- if...else if
+- nested if 
+- switch
+
+Functions
+Arrow Functions
+Function Hoisting
+
+
