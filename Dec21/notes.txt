@@ -1,0 +1,105 @@
+- The identifiers in JavaScript are case-sensitive
+- Strict mode => "use strict"; at the beginning of a function or a script
+- Hoisting =>to move all of the declarations at the top of the scope
+- Spread Operator
+- Rest Parameter
+- Dynamic function- Destructuring
+- ES6 Variables (var, let, const)
+- variable which is declared by using the let keyword is assigned the block scope.
+
+var x = 10;
+var x = 20;
+console.log(x) //////prints 20 as output////////
+
+*********************
+
+let x = 10;
+let x = 20;
+console.log(x) ////////gives error(Identifier 'x' has already been declared)///////////
+
+**********************
+const keyword- 
+-It cannot be reassigned a value.
+-It is block scoped.
+-A constant cannot be re-declared.
+-Constants must be initialized at the time of declaration.
+- Hoisting is the default behavior of JavaScript 
+  to move all declarations to the top of the current script, current function, or current scope.
+- JavaScript only hoists the variable declaration, not variable initialization.
+Operators- 
+- Arithmetic Operators(+,-,*,/,%,++,--)
+- Relational Operators(>,<,>=,<=,==,!=)
+- Logical Operators(&&,||,!)
+- Assignment Operators(=,+=,-=,*=,/=)
+- Bitwise Operators(&,|,^,~,<<,>>)
+- Type Operators(typeof(operand))
+- Miscellaneous Operators(+,-,?)
+Loops
+- Definite   : for, for...in, for...of
+- Indefinite : while, do...while
+Loop control statements
+-break;
+-continue;
+
+Decision making statements
+- if 
+- if...else
+- if...else if
+- nested if 
+- switch
+
+Functions
+Arrow Functions
+Function Hoisting
+
+There are syntactic variations in arrow function
+- optional parantheses for single Parameter
+- Optional braces for single statement and the empty braces if there is not any parameter required.
+- in ES6 binding can be automatically done by arrow function
+Generators
+ES6 generator is a different kind of function that may
+be paused in the middle either one or many times and can be resumed later.
+- when generator is called, it returns generator object
+- suffixing the function keyword with an asterisk (*).
+-  generator functions cannot be represented by using arrow function
+
+IIFE(Immediately Invoked Function Expression)
+- known as Self-Executing Anonymous Function.
+- runs as soon as it is defined
+- IIFEs can be parameterized
+- IIFEs can be named or anonymous
+- The variables declared in the function expression will not be available outside the function.
+
+JavaScript arrays
+- Multidimensional array
+- Passing arrays to functions
+- Return array from functions
+
+Maps:
+- ES6 provides us a new collection type called Map, 
+  which holds the key-value pairs in which values of any type can be used as either keys or values. 
+- Maps are ordered, so they traverse the elements in their insertion order.
+
+- An iterator is an object, which defines the sequence and a return value upon its termination.
+
+Set:
+- A set is a data structure that allows you to create a collection of unique values.
+
+Objects:
+Objects are the collection of key/value pairs that can be 
+modified throughout the lifecycle of an object as similar to hash map or dictionary.
+
+*ways to merge objects in ES6
+- Object.assign() method
+- Object spread syntax method
+
+Object Destructuring:
+It is similar to array destructuring except that instead of values being pulled out of an array, 
+the properties (or keys) and their corresponding values can be pulled out from an object.
+
+
+ES6 numbers:
+- The Number object is created by using the Number() constructor. 
+- ES6 Number has several methods and properties 
+to perform numeric functions that has the date, floating points, integers, etc. 
+
