@@ -1,0 +1,20 @@
+Promise:
+- Promise object contains both the producing code and 
+  calls to the consuming code
+- three states of a promise are :
+  1. Pending - result here is undefined
+  2. Fulfilled - result here is a value
+  3. Rejected - result here is an error object
+- promise method must be used to handle promises.
+- Promise.then() takes two arguments, 
+    a callback for success and another for failure.
+- Promise can either be rejected or resolved based on the operation outcome.
+- Promise chaining is helpful when we have multiple interdependent asynchronous functions, 
+  and each of these functions should run one after another.
+
+
+Validations:
+- Validation is the process of checking whether the information provided
+  by the front-end user is correct or not as per the requirements
+- Basic Validations:  It is a process to make sure that all of the mandatory fields are filled or not.
+- Data Format validation: it is the process to check that entered data is correct or not.
