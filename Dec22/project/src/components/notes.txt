@@ -18,3 +18,45 @@ Validations:
   by the front-end user is correct or not as per the requirements
 - Basic Validations:  It is a process to make sure that all of the mandatory fields are filled or not.
 - Data Format validation: it is the process to check that entered data is correct or not.
+
+
+Boolean:
+- The ES6 Boolean objects can represent two values, either 'true' or 'false'. 
+- In JavaScript, the Boolean is used as a function 
+  to get the value of an object, a variable, conditions, expressions, 
+  and many more in terms of true and false.
+properties
+  1. Constructor : returns a constructor function for an object.
+  2. Prototype   : to add properties and methods to the Boolean instances.
+methods
+  1. toSource 
+  2. toString
+  3. valueOf
+
+
+Modules 
+- Modules are the piece or chunk of a JavaScript code written in a file.
+- JavaScript modules help us to modularize the code simply by partitioning 
+  the entire code into modules that can be imported from anywhere. 
+
+  * Exporting Modules
+
+  * Importing Modules
+
+Cyclic Dependencies
+
+Page Redirect:
+- a mechanism of sending search engines and users on a different URL from the original one.
+- window.location object is a property of the window object.
+
+Dialog box:
+Alert
+Confirm
+Prompt
+
+
+Events:
+onclick()
+onmouseover()
+onmouseout()
+onsubmit()

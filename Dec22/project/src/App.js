@@ -6,9 +6,17 @@ import {Cookies} from './components/Cookies';
 import {Callback} from './components/Callback';
 import {Promises} from './components/Promises';
 import UserForm from './components/UserForm';
+import { Samsung } from './components/Modules';
+import { playMusic } from './components/Modules';
+import { P } from './components/Modules';
+import Defaulter from './components/Modules';
+import {q, show} from './components/Modules';
+import {PageRedirect} from './components/PageRedirect'
 function App() {
-  return 
-  <UserForm/>
+  
+  return
+  <PageRedirect/> 
+  // <UserForm/>
   // <Promises/>
   // <Callback/>
   // <Strings/>
