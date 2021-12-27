@@ -1,0 +1,9 @@
+- A Component is one of the core building blocks of React.
+- components is react return jsx.
+1. Functional Component 
+- These are simply javascript functions.
+- need not have parameters
+- these components do not require data from other components
+-  we can compose multiple functional components under a single functional component
+2. Class Component
+- 
