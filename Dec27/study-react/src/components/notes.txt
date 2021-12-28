@@ -6,4 +6,4 @@
 - these components do not require data from other components
 -  we can compose multiple functional components under a single functional component
 2. Class Component
-- 
+Decomposing components

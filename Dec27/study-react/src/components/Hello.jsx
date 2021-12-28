@@ -1,2 +1,2 @@
 import ReactDOM from 'react-dom';
-ReactDOM.render(<p>Hello</p>, document.getElementById('root'));
+//ReactDOM.render(<p>Hello</p>, document.getElementById('root'));
