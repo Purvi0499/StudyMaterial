@@ -1,0 +1,1 @@
+effect hook in place of componentDidMount and componentDIdUpdate
