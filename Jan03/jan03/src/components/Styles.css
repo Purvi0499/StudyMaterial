@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: purple;
+}
+.header a {
+  width: 33.33%;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font: oblique;
+  color: lightgreen;
+}
+.header a:hover {
+  color: yellow;
+}
+.header a.active {
+  color: #fff;
+  font-size: 24px;
+}
+main {
+  background-color: lightgreen;
+  min-height: calc(100vh-64px);
+  text-align: center;
+}
+main img {
+  width: 100%;
+  height: auto;
+}
