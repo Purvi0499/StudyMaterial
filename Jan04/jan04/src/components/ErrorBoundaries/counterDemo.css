@@ -1,0 +1,9 @@
+.counter {
+  text-align: center;
+  color: white;
+  background-color: green;
+  width: 50px;
+  height: 25px;
+  border-radius: 25%;
+  margin-left: 50%;
+}
