@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { useForm, useFieldArray, useFormState } from "react-hook-form";
+import { useForm, useFieldArray } from "react-hook-form";
 
 export default function UserInformation(prop) {
   const { register, control } = prop;
@@ -36,7 +36,7 @@ export default function UserInformation(prop) {
                     placeholder="Enter Your Last name"
                     {...register("lastname", { required: false })}
                     name={`users.[${index}].lastname`}
-                    defaultValue={item.lasttname}
+                    defaultValue={item.lastname}
                   />
                 </div>
                 <br />
@@ -72,7 +72,7 @@ export default function UserInformation(prop) {
               </div>
               <button
                 onClick={() =>
-                  remove({ firstname: "", lasttname: "", email: "", state: "" })
+                  remove({ firstname: "", lastname: "", email: "", state: "" })
                 }
                 className="btn btn-danger"
               >
@@ -83,7 +83,7 @@ export default function UserInformation(prop) {
         </div>
         <button
           onClick={() =>
-            append({ firstname: "", lasttname: "", email: "", state: "" })
+            append({ firstname: "", lastname: "", email: "", state: "" })
           }
           className="btn btn-primary"
         >
