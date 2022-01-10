@@ -1,11 +1,18 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
+import TextError from "./TextError";
 const initialValues = {
   name: "Purvi",
   email: "",
   channel: "",
   comments: "",
   address: "",
+  social: {
+    facebook: "",
+    twitter: "",
+  },
+  phoneNumbers: ["", ""],
+  phNumbers: [""],
 };
 const onSubmit = (values) => {
   console.log("Form Data", values);
@@ -36,14 +43,19 @@ export default function YoutubeForm() {
       <Form>
         <div className="form-control">
           <label htmlFor="name">Name</label>
-          <Field type="text" id="name" name="name"></Field>
-          <ErrorMessage name="name" />
+          <Field
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name here"
+          ></Field>
+          <ErrorMessage name="name" component={TextError} />
         </div>
 
         <div className="form-control">
           <label htmlFor="email">Email</label>
           <Field type="email" id="email" name="email"></Field>
-          <ErrorMessage name="email" />
+          <ErrorMessage name="email" component={TextError} />
         </div>
         <div className="form-control">
           <label htmlFor="channel">Channel</label>
@@ -53,7 +65,9 @@ export default function YoutubeForm() {
             name="channel"
             placeholder="youtube channel name"
           ></Field>
-          <ErrorMessage name="channel" />
+          <ErrorMessage name="channel">
+            {(errorMsg) => <div className="error">{errorMsg}</div>}
+          </ErrorMessage>
         </div>
         <div className="form-control">
           <label htmlFor="comments"> Comments</label>
@@ -64,7 +78,6 @@ export default function YoutubeForm() {
           <Field name="address">
             {(props) => {
               const { field, form, meta } = props;
-              console.log("Render props", props);
               return (
                 <div>
                   <input type="text" id="address" {...field} />
@@ -74,6 +87,34 @@ export default function YoutubeForm() {
             }}
           </Field>
         </div>
+        <div className="form-control">
+          <label htmlFor="facebook">Facebook profile</label>
+          <Field type="text" id="facebook" name="social.facebook"></Field>
+        </div>
+
+        <div className="form-control">
+          <label htmlFor="twitter">Twitter profile</label>
+          <Field type="text" id="twitter" name="social.twitter"></Field>
+        </div>
+        <div className="form-control">
+          <label htmlFor="primaryPh">Primary Phone number</label>
+          <Field type="text" id="primaryPh" name="phoneNumbers[0]"></Field>
+        </div>
+
+        <div className="form-control">
+          <label htmlFor="secondaryPh">Secondary Phone number</label>
+          <Field type="text" id="secondaryPh" name="phoneNumbers[1]"></Field>
+        </div>
+        <div className="form-control">
+          <label>Phone Numbers List</label>
+          <FieldArray name="phNumbers">
+            {(fieldArrayProps) => {
+              console.log("fieldArrayProps", fieldArrayProps);
+              return <div>Field Array</div>;
+            }}
+          </FieldArray>
+        </div>
+
         <button type="submit">Submit</button>
       </Form>
     </Formik>
