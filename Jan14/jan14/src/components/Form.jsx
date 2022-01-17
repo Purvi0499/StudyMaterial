@@ -1,15 +1,19 @@
 import React from "react";
 import {
-  Icon,
   Input,
   InputGroup,
   InputLeftElement,
   Stack,
   Button,
   FormControl,
-  FormHelperText,
+  Center,
+  HStack,
+  Circle,
+  Square,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
-import { EmailIcon, InfoIcon, LockIcon } from "@chakra-ui/icons";
+import { EmailIcon, InfoIcon, LockIcon, PhoneIcon } from "@chakra-ui/icons";
 export default function Forms() {
   return (
     <>
@@ -40,7 +44,40 @@ export default function Forms() {
           </InputGroup>
         </FormControl>
         <Button type="submit">Sign Up</Button>
+        <Center bg="tomato" h="100px" color="white">
+          This is the Center
+        </Center>
+        <HStack>
+          <Circle size="40px" bg="tomato" color="white">
+            <PhoneIcon />
+          </Circle>
+          <Square size="40px" bg="purple.700" color="white">
+            <PhoneIcon />
+          </Square>
+        </HStack>
       </Stack>
+      <Wrap>
+        <WrapItem>
+          <Center w="180px" h="80px" bg="red.200">
+            Box 1
+          </Center>
+        </WrapItem>
+        <WrapItem>
+          <Center w="180px" h="80px" bg="green.200">
+            Box 2
+          </Center>
+        </WrapItem>
+        <WrapItem>
+          <Center w="180px" h="80px" bg="tomato">
+            Box 3
+          </Center>
+        </WrapItem>
+        <WrapItem>
+          <Center w="180px" h="80px" bg="blue.200">
+            Box 4
+          </Center>
+        </WrapItem>
+      </Wrap>
     </>
   );
 }
